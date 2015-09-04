@@ -205,3 +205,6 @@ been left in the directory, with .patch extensions):
 - base report bugs on the GitHub issue tracker:
 <https://github.com/jgm/highlighting-kate/issues>.
 
+Change made by Karl Pettersson in additions to those in jgm:master
+
+- python.xml: Removed the different types of quoted "comments" (i.e. docstrings) and the contexts `#CheckForString` and `CheckForStringNext` (which seem to be used for distinguishing between docstrings and ordinary multiline strings). Treating docstrings as comments is semantically questionable and the system also [causes trouble with e.g. multiline lists and dicts](https://github.com/jgm/highlighting-kate/issues/60).
